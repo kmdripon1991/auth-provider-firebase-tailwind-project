@@ -4,7 +4,7 @@ import { AuthContext } from "../../providers/AuthProviders";
 import Home from "../Home/Home";
 
 const Header = () => {
-  const { user, logOut } = useContext(AuthContext);
+  const { user, logOut, googleSignIn } = useContext(AuthContext);
   const handleLogOut = () => {
     logOut()
       .then(() => {})
